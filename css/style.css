@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap');
+Body {
+    margin: 0;
+    padding: 0;
+    font-family: "Kaisei HarunoUmi",sans-serif;
+}
+
+.login {
+    height: 100vh;
+    background: linear-gradient(120deg, #912CEE, #CD00CD, #E066FF,#00FFFF,#CFCFCF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container {
+    min-height: 400px;
+    width: 300px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_title {
+    margin-bottom: 32px;
+    color: #303030;
+}
+
+.login_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_input {
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: unset;
+    outline: none;
+}
+
+.login_input-border {
+    height: 2px;
+    width: 250px;
+    margin-bottom: 16px;
+    background-color: #CFCFCF;
+    transition: 3s ease-in-out;
+}
+
+.login_input-border::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    margin-bottom: 16px;
+    background: linear-gradient(120deg, #912CEE, #CD00CD,#E066FF,#00FFFF,#CFCFCF );    
+    transition: .3s ease-in-out;
+}
+
+.login_input:focus + .login_input-border::after  {
+    width: 100%;
+}
+
+.login_submit:hover {
+    background-position: right;
+}
+
+.login_submit {
+    height: 48px;
+    width: 140px;
+    outline: none;
+    background: linear-gradient(120deg, #CD00CD, #E066FF,#00FFFF,#CFCFCF);    
+    background-size: 200%;
+    margin-bottom: 32px;
+    color: #ffffff;
+    font-size: unset;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #CD00CD, #E066FF,#00FFFF,#CFCFCF);  
+    color: #303030;
+}
